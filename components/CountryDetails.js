@@ -56,16 +56,18 @@ const CountryDetails = ({ country }) => {
         </div>
         <div className={detailStyles.neighborCard}>
           <div className={detailStyles.neighborCardTitle}>
-            <h1>Neighbour Countries</h1>
+            <h1>Neighbor Countries</h1>
           </div>
-          <div className={detailStyles.neighborCardFlags}>
-            {country.neighbors.map((neighbor) => (
-              <div className={detailStyles.neighborCardFlag}>
+          
+          {/* <div className={detailStyles.neighborCardFlags}>
+            {country.neighbors.map( (neighbor) => (
+              <div className={detailStyles.neighborCardFlag} key={neighbor.alpha2Code}>
                 <img src={neighbor.flag}></img>
                 <p>{neighbor.name}</p>
               </div>
             ))}
-          </div>
+          </div> */}
+
         </div>
         <GoogleMap center={country.latlng} countryName={country.name} />
       </div>
