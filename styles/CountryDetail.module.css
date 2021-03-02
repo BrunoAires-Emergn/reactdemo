@@ -1,0 +1,37 @@
+.card {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.cardBody {
+  display: flex;
+}
+.cardContent {
+  margin-left: 5rem;
+}
+.cardImage {
+  width: 50%;
+}
+.cardImage img {
+  width: 100%;
+}
+.neighborCard {
+  border: rgb(171, 171, 171) 0.0625rem solid;
+  padding: 2rem;
+}
+.neighborCardFlags {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: top;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.neighborCardFlag {
+  margin-bottom: 2rem;
+  width: 30%;
+  border: solid 0.0625rem grey;
+  flex-direction: column;
+  /* flex-grow: 1; */
+}
+.neighborCardFlag img {
+  width: 100%;
+}
