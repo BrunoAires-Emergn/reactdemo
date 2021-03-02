@@ -13,11 +13,13 @@ export const CountryCard = ({ country }) => {
           <p>Currency:{country.currencies[0].name}</p>
           <p>Current Date and Time:{country.timezones[0]}</p>
           <div className={countryCardStyles.cardButton}>
-            <button
-              className={`${countryCardStyles.button} , ${countryCardStyles.mr}`}
-            >
-              Show Map
-            </button>
+            <Link href={`/country/${country.alpha3Code}`}>
+              <button
+                className={`${countryCardStyles.button} , ${countryCardStyles.mr}`}
+              >
+                Show Map
+              </button>
+            </Link>
             <Link href={`/country/${country.alpha3Code}`}>
               <button className={countryCardStyles.button}>Detail</button>
             </Link>

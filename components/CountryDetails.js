@@ -67,7 +67,6 @@ const CountryDetails = ({ country }) => {
             ))}
           </div>
         </div>
-        ;{/* {country.latlng[0]} / {country.latlng[1]} */}
         <GoogleMap center={country.latlng} countryName={country.name} />
       </div>
     </div>

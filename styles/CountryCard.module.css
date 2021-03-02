@@ -27,6 +27,7 @@
 }
 .cardButton {
   display: flex;
+
   /* justify-content: space-between; */
 }
 .button {
@@ -36,6 +37,7 @@
   padding: 1rem 1.5rem;
   flex-grow: 1;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .mr {
   margin-right: 2rem;
